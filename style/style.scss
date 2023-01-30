@@ -1,0 +1,235 @@
+$black: #222222;
+$open-sans: 'Open Sans', sans-serif;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 8px 26px 11px 29px;
+  background: #F7859C;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.subtitle {
+  font-family: $open-sans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: $black;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 58.32px;
+  color: $black;
+}
+
+.text {
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #404756;
+}
+
+.header {
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px 0;
+  &__container {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+    .header__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .menu {
+        display: flex;
+        gap: 30px;
+        &__link {
+          list-style: none;
+          &-item {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-decoration: none;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.intro {
+  position: relative;
+  padding: 100px 0 400px 0;
+  .dec {
+    position: absolute;
+    z-index: -1;
+  }
+  .dec-1 {
+    left: 0;
+    top: 0;
+  }
+  .dec-2 {
+    right: 0;
+    top: 0;
+  }
+  .intro__body {
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+    .intro__subtitle {
+      span {
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        z-index: -1;
+      }
+      position: relative;
+      max-width: fit-content;
+      margin: 0 auto;
+    }
+    .intro__title {
+      font-weight: 700;
+      font-size: 97px;
+      line-height: 87px;
+      color: $black;
+      margin: 0;
+    }
+    .intro__text {
+      max-width: 429px;
+      margin: 45px auto 37px auto;
+    }
+  }
+}
+
+.collection {
+  background: url(./../img/collection__bottom.svg) no-repeat bottom center/contain;
+  padding-bottom: 250px;
+  .collaction__body {
+    text-align: center;
+    .collection__subtitle {
+      span {
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        z-index: -1;
+      }
+      position: relative;
+      max-width: fit-content;
+      margin: 4px auto 0px auto;
+    }
+  }
+  .collection__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 76px;
+    gap: 170px;
+    .collection__textbox {
+      text-align: left;
+      .collection__textbox-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 22px;
+        color: $black;
+        margin-bottom: 17px;
+      }
+      .line {
+        width: 374.44px;
+        border-top: 1px solid rgba(64, 71, 86, 0.6);
+        margin: 32.2px 0 26.98px 0;
+      }
+    }
+    .collection__imgbox {
+      img {
+        width: 621px;
+        height: 666px;
+      }
+    }
+  }
+}
+
+.tier {
+  padding: 120px 0 108px 0;
+  background: #FBF1E6;
+  .tier__subtitle {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 4px;
+    span {
+      position: absolute;
+      left: -12px;
+      top: -12px;
+      z-index: -1;
+    }
+  }
+  .tier__title {
+    margin-bottom: 76px;
+  }
+  .tier__line {
+    width: 100vh;
+    height: 1px;
+    background: rgba(64, 71, 86, 0.6);
+    border-radius: 0;
+  }
+  .tier__level {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 73px 0 68px 0;
+    &-textbox {
+      width: 336px;
+      .tier__level-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 32px;
+        color: $black;
+      }
+      .tier__level-tier {
+        display: flex;
+        gap: 30px;
+        margin: 32px 0 28.5px 0;
+        .tier__level-level {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 16px;
+          color: $black;
+        }
+        .tier__levelbox {
+          display: flex;
+          gap: 5.51px;
+        }
+      }
+    }
+  }
+}
+
+.map {
+  background: url(./../img/map__top.svg) no-repeat top center/contain;
+  padding-top: 260px;
+}
