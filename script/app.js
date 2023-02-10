@@ -1,16 +1,21 @@
-const triger = document.querySelector('#triger')
-const lineTwo = document.querySelector('.line-2')
-const active = document.querySelector('.active')
+const triger = document.querySelectorAll('.triger')
+const text = document.querySelectorAll('.accordion__text')
+const textaActive = document.querySelectorAll('.accordion__text-active')
+const accordions = document.querySelectorAll('.accordion')
+const accordionActive = document.querySelectorAll('.accordion__item-active')
 
-for (const active of lineTwo) {
-  active.addEventListener('click', () => {
-    clear()
-    active.classList.add('active')
+for (const accordion of accordions) {
+  accordion.addEventListener('click', () => {
+    clearActiveClasses()
+    accordion.classList.remove('accordion')
+    accordion.classList.add('accordion__active')
+    // accordion.classList.toggle('accordion__active')
   })
 }
 
-function clear() {
-  lineTwo.forEach((active) => {
-    active.classList.remove('active')
-  });
-}
+function clearActiveClasses() {
+  accordions.forEach((accordion) => {
+    accordion.classList.add('accordion')
+    accordion.classList.remove('accordion__active')
+  }
+)}
