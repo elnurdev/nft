@@ -794,6 +794,15 @@ $open-sans: 'Open Sans', sans-serif;
     padding: 0 0 150px 0;
     .collection__content {
       padding-top: 35px;
+      .collection__textbox {
+        .collection__text {
+          width: 100%;
+          max-width: fit-content;
+        }
+        .line {
+          width: 100%;
+        }
+      }
     }
   }
 
@@ -826,6 +835,17 @@ $open-sans: 'Open Sans', sans-serif;
     }
   }
 
+  .tier {
+    .tier__level {
+      .tier__level-imgbox {
+        width: 100%;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
   .team {
     .team__content {
       display: flex;
@@ -834,6 +854,7 @@ $open-sans: 'Open Sans', sans-serif;
   }
 
   .faq {
+    height: auto;
     .faq__body {
       .faq__pappel {
         top: -116px;
@@ -852,6 +873,10 @@ $open-sans: 'Open Sans', sans-serif;
           }
         }
       }
+      .footer__bottom {
+        flex-direction:  column;
+        gap: 0;
+      }
     }
   }
 }
@@ -859,7 +884,7 @@ $open-sans: 'Open Sans', sans-serif;
 @media (max-width: 280px) {
   .title {
     font-size: 1.4rem;
-    line-height: 40px;
+    line-height: 26px;
   }
 
   .subtitle {
@@ -888,13 +913,6 @@ $open-sans: 'Open Sans', sans-serif;
         .collection__textbox-title {
           font-size: 22px;
         }
-        .collection__text {
-          width: 100%;
-          max-width: fit-content;
-        }
-        .line {
-          width: 100%;
-        }
       }
     }
   }
@@ -910,12 +928,6 @@ $open-sans: 'Open Sans', sans-serif;
       }
       .tier__level-tier {
         margin: 27px 0 24px 0;
-      }
-    }
-    .tier__level-imgbox {
-      width: 100%;
-      img {
-        max-width: 100%;
       }
     }
   }
@@ -942,7 +954,6 @@ $open-sans: 'Open Sans', sans-serif;
   }
 
   .faq {
-    height: auto;
     padding: 126px 0 174px 0;
     .faq__body {
       .accordion {
@@ -966,10 +977,6 @@ $open-sans: 'Open Sans', sans-serif;
         .footer__title {
           line-height: 26px;
         }
-      }
-      .footer__bottom {
-        flex-direction:  column;
-        gap: 0;
       }
     }
   }

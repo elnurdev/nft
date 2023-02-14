@@ -761,6 +761,14 @@
   .collection .collection__content {
     padding-top: 35px;
   }
+  .collection .collection__content .collection__textbox .collection__text {
+    width: 100%;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .collection .collection__content .collection__textbox .line {
+    width: 100%;
+  }
   .map {
     padding: 160px 0 55px 0;
   }
@@ -786,9 +794,18 @@
   .map .map__body .map__content-item .main__imgbox {
     display: none;
   }
+  .tier .tier__level .tier__level-imgbox {
+    width: 100%;
+  }
+  .tier .tier__level .tier__level-imgbox img {
+    max-width: 100%;
+  }
   .team .team__content {
     display: flex;
     flex-direction: column;
+  }
+  .faq {
+    height: auto;
   }
   .faq .faq__body .faq__pappel {
     top: -116px;
@@ -800,11 +817,15 @@
   .footer .footer__body .footer__nav .footer__social .footer__item {
     margin-bottom: 12px;
   }
+  .footer .footer__body .footer__bottom {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 @media (max-width: 280px) {
   .title {
     font-size: 1.4rem;
-    line-height: 40px;
+    line-height: 26px;
   }
   .subtitle {
     font-size: 16px;
@@ -822,14 +843,6 @@
   .collection .collection__content .collection__textbox .collection__textbox-title {
     font-size: 22px;
   }
-  .collection .collection__content .collection__textbox .collection__text {
-    width: 100%;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-  }
-  .collection .collection__content .collection__textbox .line {
-    width: 100%;
-  }
   .tier .tier__title {
     margin-bottom: 37px;
   }
@@ -841,12 +854,6 @@
   }
   .tier .tier__level-textbox .tier__level-tier {
     margin: 27px 0 24px 0;
-  }
-  .tier .tier__level-imgbox {
-    width: 100%;
-  }
-  .tier .tier__level-imgbox img {
-    max-width: 100%;
   }
   .map .map__body .map__title {
     margin-bottom: 58px;
@@ -861,7 +868,6 @@
     font-size: 22px;
   }
   .faq {
-    height: auto;
     padding: 126px 0 174px 0;
   }
   .faq .faq__body .accordion .accordion__item .accordion__title {
@@ -872,9 +878,5 @@
   }
   .footer .footer__body .footer__head .footer__title {
     line-height: 26px;
-  }
-  .footer .footer__body .footer__bottom {
-    flex-direction: column;
-    gap: 0;
   }
 }/*# sourceMappingURL=style.css.map */
